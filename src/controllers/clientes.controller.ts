@@ -1,11 +1,13 @@
 import { Controller, Post, Body, Get, Put, Delete, Param, ParseIntPipe } from '@nestjs/common';
 import { ClientesService } from 'src/services/clientes.service';
+import { createClienteDto, updateClienteDto } from 'src/dto/clientes.dto';
+
 
 @Controller('clientes')
 export class ClientesController {
     constructor(private clienteService: ClientesService) {}
     @Post()
-    create(@Body() payload: any) {
+    create(@Body() payload: createClienteDto) {
         return this.clienteService.create(payload);
     }
 
@@ -15,7 +17,7 @@ export class ClientesController {
     }
 
     @Put(':id')
-    update(@Param('id', ParseIntPipe) id:number, @Body() payload: any){
+    update(@Param('id', ParseIntPipe) id:number, @Body() payload: updateClienteDto){
         return this.clienteService.update(id, payload);
     }
 
