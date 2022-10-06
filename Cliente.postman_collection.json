@@ -1,0 +1,126 @@
+{
+	"id": "d5a648cf-0009-3ca4-d85f-34d28372c662",
+	"name": "Cliente",
+	"description": "",
+	"order": [
+		"22a05076-59fc-b2dd-4882-1249fc1ac006",
+		"451e311c-aabf-5afd-32d3-2983064f5471",
+		"2e9165fc-4deb-53e9-e633-f29022076d08",
+		"ed65a232-0917-a3c9-2c9c-39be991feece"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1665013647456,
+	"owner": "8326434",
+	"public": false,
+	"requests": [
+		{
+			"id": "22a05076-59fc-b2dd-4882-1249fc1ac006",
+			"headers": "",
+			"headerData": [],
+			"url": "https://jmcawi0bk9.execute-api.us-east-1.amazonaws.com/Dev/clientes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1665078177150,
+			"name": "Listar",
+			"description": "",
+			"collectionId": "d5a648cf-0009-3ca4-d85f-34d28372c662",
+			"responses": []
+		},
+		{
+			"id": "2e9165fc-4deb-53e9-e633-f29022076d08",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://jmcawi0bk9.execute-api.us-east-1.amazonaws.com/Dev/clientes/4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1665078180953,
+			"name": "actualizar",
+			"description": "",
+			"collectionId": "d5a648cf-0009-3ca4-d85f-34d28372c662",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Arturo2\",\n    \"lastName\": \"Morales\",\n    \"email\": \"macuevam1@gmail.com\",\n    \"phone\": \"+51979336360\"\n}"
+		},
+		{
+			"id": "451e311c-aabf-5afd-32d3-2983064f5471",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://jmcawi0bk9.execute-api.us-east-1.amazonaws.com/Dev/clientes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1665078179455,
+			"name": "crear",
+			"description": "",
+			"collectionId": "d5a648cf-0009-3ca4-d85f-34d28372c662",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Arturo\",\n    \"lastName\": \"Morales\",\n    \"email\": \"macuevam1@gmail.com\",\n    \"phone\": \"+51979336360\"\n}"
+		},
+		{
+			"id": "ed65a232-0917-a3c9-2c9c-39be991feece",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://jmcawi0bk9.execute-api.us-east-1.amazonaws.com/Dev/clientes/7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1665078182655,
+			"name": "delete",
+			"description": "",
+			"collectionId": "d5a648cf-0009-3ca4-d85f-34d28372c662",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}
